@@ -35,5 +35,10 @@ Verkar som OSM kanske ligger efter WD och WD uppdateras vart 4:e år.... Öppna 
 </mapframe>
 ''' 
 
+**wdt:P17 Q34**
+
+<img width="913" height="861" alt="image" src="https://github.com/user-attachments/assets/6c34805b-9111-465f-ad3b-6f437a55e370" />
+
+
 * För Stockholm Archipelago Trail gjordes en karta som denna klickbara för att navigera mellan olika delar av Wikicommons / Wikipedia se exmpel [Template:StockholmArchipelagoTrailMapSparql](https://commons.wikimedia.org/wiki/Template:StockholmArchipelagoTrailMapSparql)
  
