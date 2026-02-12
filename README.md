@@ -35,5 +35,5 @@ Verkar som OSM kanske ligger efter WD och WD uppdateras vart 4:e år.... Öppna 
 </mapframe>
 ''' 
 
-* Karta för Stockholm Archipelago Trail gjordes dom klickbara se exmpel [Template:StockholmArchipelagoTrailMapSparql](https://commons.wikimedia.org/wiki/Template:StockholmArchipelagoTrailMapSparql)
+* För Stockholm Archipelago Trail gjordes en karta som denna klickbara för att navigera mellan olika delar av Wikicommons / Wikipedia se exmpel [Template:StockholmArchipelagoTrailMapSparql](https://commons.wikimedia.org/wiki/Template:StockholmArchipelagoTrailMapSparql)
  
