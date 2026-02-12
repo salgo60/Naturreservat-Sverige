@@ -11,4 +11,4 @@ Verkar som OSM kanske ligger efter WD och WD uppdateras vart 4:e år.... Öppna 
 ## OSM Forum
 * "[Naturreservat - Wikidata skall uppdateras dvs. ladda upp nya](https://community.openstreetmap.org/t/naturreservat-wikidata-skall-uppdateras-dvs-ladda-upp-nya/141400)"
 
-<img width="1326" height="896" alt="image" src="https://github.com/user-attachments/assets/351810cf-f5fb-4233-a999-ee11cdf027ea" />
+<img width="1309" height="834" alt="image" src="https://github.com/user-attachments/assets/e9be33d3-358e-486d-8874-6b43bea638bf" />
