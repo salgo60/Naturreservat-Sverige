@@ -21,3 +21,19 @@ Verkar som OSM kanske ligger efter WD och WD uppdateras vart 4:e år.... Öppna 
 
 <img width="1510" height="718" alt="image" src="https://github.com/user-attachments/assets/9dd89c0b-5353-469f-b747-55393aa8b1c6" />
 
+## Test modul [Extension:Kartographer](https://www.mediawiki.org/wiki/Help:Extension:Kartographer) Wikipedia Sthlm
+<img width="1431" height="844" alt="image" src="https://github.com/user-attachments/assets/b1ebf774-a291-4979-ba15-2537471d92fe" />
+
+'''
+<mapframe text="text" latitude="59.3" longitude="18.5" zoom="8" width="900" height="900">
+
+[{  "type": "ExternalData",
+  "service": "geoshape",
+  "query": "SELECT * WHERE { ?id wdt:P31 wd:Q179049;wdt:P131/wdt:P131 wd:Q104231 .}"
+  } 
+]
+</mapframe>
+''' 
+
+* Karta för Stockholm Archipelago Trail gjordes dom klickbara se exmpel [Template:StockholmArchipelagoTrailMapSparql](https://commons.wikimedia.org/wiki/Template:StockholmArchipelagoTrailMapSparql)
+ 
