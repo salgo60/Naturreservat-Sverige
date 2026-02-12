@@ -12,3 +12,12 @@ Verkar som OSM kanske ligger efter WD och WD uppdateras vart 4:e år.... Öppna 
 * "[Naturreservat - Wikidata skall uppdateras dvs. ladda upp nya](https://community.openstreetmap.org/t/naturreservat-wikidata-skall-uppdateras-dvs-ladda-upp-nya/141400)"
 
 <img width="1309" height="834" alt="image" src="https://github.com/user-attachments/assets/e9be33d3-358e-486d-8874-6b43bea638bf" />
+
+## Länkröta Wikipedia - Sverige Naturreservat   > 11 000 länkar pekar på site som upphörde för flera år sedan
+* [#67](https://github.com/salgo60/SCB-Wikidata/issues/67)
+* [links_nvpub_v1_2026_02_09.html](https://salgo60.github.io/SCB-Wikidata/notebook/resultsNvpub/links_nvpub_v1_2026_02_09.html)
+
+<img width="1527" height="774" alt="image" src="https://github.com/user-attachments/assets/0c65b48e-c0c5-4f39-b06a-c032a8535f4a" />
+
+<img width="1510" height="718" alt="image" src="https://github.com/user-attachments/assets/9dd89c0b-5353-469f-b747-55393aa8b1c6" />
+
