@@ -41,4 +41,111 @@ Verkar som OSM kanske ligger efter WD och WD uppdateras vart 4:e år.... Öppna 
 
 
 * För Stockholm Archipelago Trail gjordes en karta som denna klickbara för att navigera mellan olika delar av Wikicommons / Wikipedia se exmpel [Template:StockholmArchipelagoTrailMapSparql](https://commons.wikimedia.org/wiki/Template:StockholmArchipelagoTrailMapSparql)
- 
+
+### Test Links
+* [Sandbox](https://sv.wikipedia.org/wiki/Anv%C3%A4ndare:Salgo60/sandl%C3%A5da#/map/0)
+
+<img width="859" height="664" alt="image" src="https://github.com/user-attachments/assets/b6714607-6343-44b2-a838-d05b9f38116d" />
+
+#### Code added 
+Its rader unstable but works 
+* should be SPARQL in one line
+* check usage of characters...
+* ?title ?description is the text in the popup
+
+'''
+<mapframe text="Naturreservat i Stockholms län med popup och länk" latitude="59.3" longitude="18.5" zoom="8" width="900" height="900">
+[{ "type":"ExternalData","service":"geoshape","query":"SELECT DISTINCT ?id (?idLabel AS ?title) ?description ('small' AS ?marker_size) ('#228b22' AS ?marker_color) ('park' AS ?marker_symbol) WHERE { ?id wdt:P31 wd:Q179049; wdt:P131/wdt:P131 wd:Q104231. OPTIONAL{?id wdt:P18 ?img} OPTIONAL{?id wdt:P373 ?commons} OPTIONAL{?sitelink schema:about ?id; schema:isPartOf <https://sv.wikipedia.org/>} BIND(IF(BOUND(?commons),CONCAT('[[c:Category:',?commons,']]\\n'),'') AS ?d1) BIND(IF(BOUND(?img),CONCAT(?d1,'[[File:',SUBSTR(STR(?img),52,400),'{{!}}200px]]\\n'),?d1) AS ?d2) BIND(IF(BOUND(?sitelink),CONCAT(?d2,'[[:sv:',REPLACE(STR(?sitelink),'^.*wiki/',''),']]'),?d2) AS ?description) SERVICE wikibase:label { bd:serviceParam wikibase:language 'sv,en'. } }"}]
+</mapframe>
+'''
+##### SPARQL
+'''
+SELECT DISTINCT
+  ?id
+  (?idLabel AS ?title)
+  ?description
+  ('small' AS ?marker_size)
+  ('#228b22' AS ?marker_color)
+  ('park' AS ?marker_symbol)
+
+WHERE {
+  # Nature reserves in Stockholm County
+  ?id wdt:P31 wd:Q179049;          # instance of nature reserve
+      wdt:P131/wdt:P131 wd:Q104231. # located in Stockholm County
+
+  # Optional data
+  OPTIONAL { ?id wdt:P18 ?img }       # image
+  OPTIONAL { ?id wdt:P373 ?commons }  # Commons category
+  OPTIONAL {
+    ?sitelink schema:about ?id;
+              schema:isPartOf <https://sv.wikipedia.org/>
+  }
+
+  # Popup description builder
+  BIND(
+    IF(
+      BOUND(?commons),
+      CONCAT('[[c:Category:', ?commons, ']]\n'),
+      ''
+    ) AS ?d1
+  )
+
+  BIND(
+    IF(
+      BOUND(?img),
+      CONCAT(
+        ?d1,
+        '[[File:',
+        SUBSTR(STR(?img), 52, 400),
+        '{{!}}200px]]\n'
+      ),
+      ?d1
+    ) AS ?d2
+  )
+
+  BIND(
+    IF(
+      BOUND(?sitelink),
+      CONCAT(
+        ?d2,
+        '[[:sv:',
+        REPLACE(STR(?sitelink), '^.*wiki/', ''),
+        ']]'
+      ),
+      ?d2
+    ) AS ?description
+  )
+
+  # Labels in Swedish first, then English
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "sv,en"
+  }
+}
+'''
+
+* Property	Meaning
+  * P18	Image
+  * P373	Wikimedia Commons category
+  * svwiki sitelink	Link to Swedish Wikipedia article
+
+
+**🧱 Popup construction logic**
+
+The popup text is built step-by-step:
+
+Step 1 — Commons link
+[[c:Category:...]]
+
+
+Adds a link to the Commons category.
+
+**Step 2 — Image**
+[[File:...|200px]]
+
+Displays a 200px image in the popup.
+
+SUBSTR extracts the filename from the Commons URL.
+
+Step 3 — Swedish Wikipedia link
+[[:sv:Article]]
+
