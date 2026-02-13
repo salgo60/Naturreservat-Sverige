@@ -157,3 +157,8 @@ Step 3 — Swedish Wikipedia link
 * vaga tankar [2020 att koppla ihop artportalen](https://github.com/salgo60/ArtportalenWikidata) - Artportalen tror jag nu skickar till iNaturalist
 
   <img width="1552" height="900" alt="image" src="https://github.com/user-attachments/assets/c3bf2b2b-8423-45ff-94a6-01bfde86149d" />
+
+* karta https://w.wiki/HqS8
+
+<img width="1294" height="658" alt="image" src="https://github.com/user-attachments/assets/f0b22baa-6d0b-4937-b981-cb3f8dfcf9b6" />
+
