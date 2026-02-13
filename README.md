@@ -43,7 +43,10 @@ Verkar som OSM kanske ligger efter WD och WD uppdateras vart 4:e år.... Öppna 
 * För Stockholm Archipelago Trail gjordes en karta som denna klickbara för att navigera mellan olika delar av Wikicommons / Wikipedia se exmpel [Template:StockholmArchipelagoTrailMapSparql](https://commons.wikimedia.org/wiki/Template:StockholmArchipelagoTrailMapSparql)
 
 ### Test Links
-* [Sandbox](https://sv.wikipedia.org/wiki/Anv%C3%A4ndare:Salgo60/sandl%C3%A5da#/map/0)
+Är skakigt med hur SPARQL frågan anges: skall vara på en rad, beror på vilka tecken som används etx
+* borde kunna ha länkar Inaturlist och andra coola externa sidor
+
+Se test [Sandbox](https://sv.wikipedia.org/wiki/Anv%C3%A4ndare:Salgo60/sandl%C3%A5da#/map/0)
 
 <img width="859" height="664" alt="image" src="https://github.com/user-attachments/assets/b6714607-6343-44b2-a838-d05b9f38116d" />
 
@@ -149,3 +152,7 @@ SUBSTR extracts the filename from the Commons URL.
 Step 3 — Swedish Wikipedia link
 [[:sv:Article]]
 
+## iNaturlist
+* karta https://w.wiki/HqM6
+
+  <img width="1552" height="900" alt="image" src="https://github.com/user-attachments/assets/c3bf2b2b-8423-45ff-94a6-01bfde86149d" />
