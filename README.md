@@ -6,6 +6,17 @@ Verkar som OSM kanske ligger efter WD och WD uppdateras vart 4:e år.... Öppna 
 Se även
 * [geojsonKML](https://github.com/salgo60/geojsonKML) för att kunna skapa ytor på iNaturlist behövdes KML men dom hade begränsning att lägga till max 3 per dag...
 
+## ChatGPT web
+
+<img width="1547" height="664" alt="image" src="https://github.com/user-attachments/assets/2862f6f2-e8cf-4d57-9528-d5ed2c820dda" />
+
+
+* [lista med diffar](https://naturreservat-sverige-open-data-audit.salgo60.chatgpt.site/)
+
+<img width="1273" height="911" alt="image" src="https://github.com/user-attachments/assets/a1a1a216-3288-48b3-a4e4-3e8913cf5224" />
+
+* [karta](https://naturreservat-sverige-open-data-audit.salgo60.chatgpt.site/karta/) 
+
 ## OSM Forum
 * [Naturreservat - Wikidata skall uppdateras dvs. ladda upp nya](https://community.openstreetmap.org/t/naturreservat-wikidata-skall-uppdateras-dvs-ladda-upp-nya/141400)
    * [karta med diff](https://salgo60.github.io/Naturreservat-Sverige/Notebook/5_Naturvardsverket_260219.html)
